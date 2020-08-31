@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
     <title>JS Issue-tracker</title>
 </head>
 <body onload="fetchIssues()">
@@ -14,12 +15,12 @@
             <form id="issue-input-form">
 
                 <div class="form-group">
-                    <label for="issue-desc-input">Description</label>
-                    <input type="text" class="form-control" id="issue-desc-input" placeholder="Describe the issue ...">
+                    <label for="issue-desc-input"><i class="fas fa-edit fa-md mr-1"></i>Description</label>
+                    <input type="text" required class="form-control" id="issue-desc-input" placeholder="Describe the issue ...">
                 </div>
                 
                 <div class="form-group">
-                    <label for="issue-priority-input">Priority</label>
+                    <label for="issue-priority-input"><i class="fas fa-exclamation-circle fa-md mr-1"></i>Priority</label>
                     <select id="issue-priority-input" class="form-control">
                         <option value="Low">Low</option>
                         <option value="Medium">Medium</option>
@@ -28,8 +29,8 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="issue-assignedTo-input">Assinged To</label>
-                    <input type="text" class="form-control" id="issue-assignedTo-input" placeholder="Rnter responsible ...">
+                    <label for="issue-assignedTo-input"><i class="fas fa-user fa-md mr-1"></i>Assinged To</label>
+                    <input type="text" required class="form-control" id="issue-assignedTo-input" placeholder="Rnter responsible ...">
                 </div>
 
                 <button type="submit" class="btn btn-primary">Add</button>
